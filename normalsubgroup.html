@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Normal Subgroup, Quotient Group, Isomorphism Theorems</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body);"
+    ></script>
+  </head>
+  <body>
+    <h1>Normal Subgroup, Quotient Group, Isomorphism Theorems</h1>
+
+    <h2>Normal Subgroup</h2>
+    <p>
+      A subgroup \( N \) of a group \( G \) is called a normal subgroup if it is
+      invariant under conjugation by elements of \( G \). That is, \( N \) is
+      normal in \( G \) if for all \( g \in G \) and \( n \in N \), the element
+      \( gng^{-1} \in N \). This is denoted as \( N \triangleleft G \).
+    </p>
+
+    <h2>Quotient Group</h2>
+    <p>
+      If \( N \) is a normal subgroup of \( G \), the quotient group \( G/N \)
+      is defined as the set of left cosets of \( N \) in \( G \) with the
+      operation \((aN)(bN) = (ab)N\). The elements of \( G/N \) are of the form
+      \( gN \) where \( g \in G \), and the operation is well-defined due to the
+      normality of \( N \).
+    </p>
+
+    <h2>Isomorphism Theorems</h2>
+
+    <h3>First Isomorphism Theorem</h3>
+    <p>
+      Let \( \varphi: G \to H \) be a group homomorphism. Then the kernel of \(
+      \varphi \), \( \ker(\varphi) \), is a normal subgroup of \( G \), and the
+      image of \( \varphi \), \( \mathrm{Im}(\varphi) \), is a subgroup of \( H
+      \). Furthermore, \( G/\ker(\varphi) \cong \mathrm{Im}(\varphi) \).
+    </p>
+    <p>\[ G/\ker(\varphi) \cong \mathrm{Im}(\varphi) \]</p>
+
+    <h3>Second Isomorphism Theorem</h3>
+    <p>
+      Let \( G \) be a group, and let \( A \) and \( B \) be subgroups of \( G
+      \) with \( B \) normal in \( G \). Then \( AB \) is a subgroup of \( G \),
+      \( B \) is a normal subgroup of \( AB \), and \((AB)/B \cong A/(A \cap
+      B)\).
+    </p>
+    <p>\[ (AB)/B \cong A/(A \cap B) \]</p>
+
+    <h3>Third Isomorphism Theorem</h3>
+    <p>
+      Let \( G \) be a group with \( N \) and \( M \) as normal subgroups of \(
+      G \) such that \( N \subseteq M \subseteq G \). Then \( M/N \) is a normal
+      subgroup of \( G/N \) and \((G/N)/(M/N) \cong G/M \).
+    </p>
+    <p>\[ (G/N)/(M/N) \cong G/M \]</p>
+  </body>
+</html>
